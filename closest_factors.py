@@ -1,12 +1,8 @@
-# To add a new cell, type '# %%'
-# To add a new markdown cell, type '# %% [markdown]'
-
 # %% 
 # Here we're trying to get the nearest factors of a number n
 # For example, we may want to convert a 1d array of length a
 # into the most square 2d matrix possible. This algorithm
 # efficiently shows what the dimensions a,b should be for n
-
 
 # %%
 from math import sqrt, ceil
@@ -19,7 +15,6 @@ for i in range(base):
     if e not in endings:
         endings.append(e)
 
-
 # %%
 # check if x is a perfect square, if it is: return its sqrt, otherwise return -1
 def perfect_square(x):
@@ -28,7 +23,6 @@ def perfect_square(x):
         if sqrt_x * sqrt_x == x:
             return sqrt_x
     return -1
-
 
 # %%
 def fermat(n):
@@ -61,7 +55,6 @@ def fermat(n):
     
     return factors + fermat(a + b) + fermat(a - b)
 
-
 # %%
 # we want numbers a,b s.t. n = a*b, where we're minimizing |a-b|
 def closest_factors(n):
@@ -86,7 +79,6 @@ def closest_factors(n):
             a *= f
     
     return (a, b)
-
 
 # %%
 print(closest_factors(5883219220))
