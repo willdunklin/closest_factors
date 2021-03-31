@@ -7,6 +7,7 @@ This algorithm efficiently shows what the dimensions a,b should be for n.
 
 ## Usage
 
+```
 closest_factors(34929)
 > (3881, 9)
 
@@ -15,3 +16,4 @@ closest_factors(429538750)
 
 closest_factors(25)
 > (5, 5)
+```
