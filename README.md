@@ -2,8 +2,11 @@
 
 Here we're trying to get the nearest factors of a number n.
 
-For example, we may want to convert a 1d array of length a into the most square 2d matrix possible. 
-This algorithm efficiently shows what the dimensions a,b should be for n.
+Specifically we want numbers `a,b` such that `n = a*b`, while minimizing `|a-b|`.
+
+### A use case:
+For example, if you want to convert a 1d array of length `n` into the most square 2d matrix possible,
+this algorithm efficiently shows what the dimensions `a,b` of that matrix should be for `n`.
 
 ## Usage
 
